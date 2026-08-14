@@ -1,0 +1,359 @@
+.orders-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 30px;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.orders-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.orders-subtitle {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================
+   Filters
+========================= */
+
+.orders-filters {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+
+/* Search */
+
+.order-search-box {
+    position: relative;
+    width: 100%;
+    /* flex: 1; */
+    min-width: 0;
+}
+
+.order-search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 17px;
+    z-index: 2;
+}
+
+.order-search-input {
+    height: 48px;
+    width: 100%;
+    padding-left: 45px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111827;
+    box-shadow: none;
+}
+
+.order-search-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* Filter */
+
+.order-filter-select {
+    width: 190px;
+    height: 48px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #374151;
+    box-shadow: none;
+}
+
+.order-filter-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   Table Card
+========================= */
+
+.orders-table-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.orders-table {
+    margin: 0;
+    min-width: 850px;
+}
+
+.orders-table thead th {
+    padding: 17px 20px;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.orders-table tbody td {
+    padding: 18px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f1f5f9;
+    color: #374151;
+    font-size: 14px;
+}
+
+.orders-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.orders-table tbody tr:hover {
+    background: #fafafa;
+}
+
+
+/* =========================
+   Order Number
+========================= */
+
+.order-number {
+    color: #2563eb;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Customer
+========================= */
+
+.order-customer-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 150px;
+    color: #111827;
+    font-weight: 500;
+}
+
+.order-customer-avatar {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   Total
+========================= */
+
+.order-total {
+    color: #111827;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   Status
+========================= */
+
+.order-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 6px 10px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+
+/* Paid */
+
+.status-paid {
+    background: #ecfdf3;
+    color: #15803d;
+}
+
+.status-paid .status-dot {
+    background: #16a34a;
+}
+
+
+/* Pending */
+
+.status-pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.status-pending .status-dot {
+    background: #f97316;
+}
+
+
+/* Processing */
+
+.status-processing {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.status-processing .status-dot {
+    background: #2563eb;
+}
+
+
+/* Shipped */
+
+.status-shipped {
+    background: #f5f3ff;
+    color: #6d28d9;
+}
+
+.status-shipped .status-dot {
+    background: #7c3aed;
+}
+
+
+/* =========================
+   View Button
+========================= */
+
+.order-view-btn {
+    border: 1px solid #dbeafe;
+    background: #eff6ff;
+    color: #2563eb;
+
+    padding: 7px 15px;
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.order-view-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 768px) {
+
+    .orders-page {
+        padding: 20px 15px;
+    }
+
+    .orders-title {
+        font-size: 24px;
+    }
+
+    .orders-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .order-filter-select {
+        width: 100%;
+    }
+
+    .order-search-input {
+        height: 46px;
+    }
+
+    .order-filter-select {
+        height: 46px;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 576px) {
+
+    .orders-page {
+        padding: 18px 12px;
+    }
+
+    .orders-header {
+        margin-bottom: 20px;
+    }
+
+    .orders-title {
+        font-size: 22px;
+    }
+
+    .orders-subtitle {
+        font-size: 14px;
+    }
+
+    .orders-table-card {
+        border-radius: 10px;
+    }
+
+    .orders-table {
+        min-width: 850px;
+    }
+
+}

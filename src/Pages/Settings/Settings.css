@@ -1,0 +1,152 @@
+.settings-page {
+  padding: 30px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.settings-header {
+  margin-bottom: 35px;
+}
+
+.settings-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #212529;
+}
+
+.settings-subtitle {
+  color: #6c757d;
+  margin: 0;
+}
+
+.settings-section {
+  margin-bottom: 35px;
+  max-width: 900px;
+}
+
+.settings-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.settings-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.settings-form-group {
+  margin-bottom: 22px;
+}
+
+.settings-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #343a40;
+}
+
+.settings-input {
+  height: 45px;
+  border-radius: 7px;
+  border: 1px solid #ced4da;
+}
+
+.settings-input:focus {
+  box-shadow: none;
+}
+
+/* .settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+} */
+
+.settings-save-btn {
+  padding: 9px 20px;
+  border-radius: 7px;
+}
+
+.settings-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.settings-option:first-child {
+  padding-top: 0;
+}
+
+.settings-option:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.settings-option-title {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.settings-option-description {
+  margin: 0;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.settings-switch {
+  width: 42px !important;
+  height: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .settings-page {
+    padding: 20px 15px;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+
+  /* .settings-actions {
+    justify-content: stretch;
+  } */
+
+  .settings-save-btn {
+    width: 100%;
+  }
+}
+
+
+.settings-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.settings-actions p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.settings-save-btn {
+  min-width: 140px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .settings-save-btn {
+    width: 100%;
+  }
+}
+

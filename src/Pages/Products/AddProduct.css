@@ -1,0 +1,132 @@
+.add-product-page {
+  background-color: #f5f7fb;
+  min-height: 100vh;
+  padding: 24px;
+  color: #111827;
+}
+
+.add-product-header {
+  margin-bottom: 24px;
+}
+
+.add-product-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.add-product-subtitle {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.add-product-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+}
+
+.form-label {
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.product-input {
+  min-height: 44px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+textarea.product-input {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.product-input::placeholder {
+  color: #9ca3af;
+}
+
+.product-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.price-prefix {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.form-text {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cancel-btn,
+.save-product-btn {
+  min-height: 42px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  background-color: #ffffff;
+}
+
+.cancel-btn:hover {
+  background-color: #f9fafb;
+}
+
+.save-product-btn {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.save-product-btn:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+@media (max-width: 576px) {
+  .add-product-page {
+    padding: 16px;
+  }
+
+  .add-product-card {
+    padding: 20px;
+  }
+
+  .add-product-title {
+    font-size: 24px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-btn,
+  .save-product-btn {
+    width: 100%;
+  }
+}

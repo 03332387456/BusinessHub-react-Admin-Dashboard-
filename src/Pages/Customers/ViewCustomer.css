@@ -1,0 +1,252 @@
+.view-customer-page {
+    background: #f5f7fb;
+    min-height: 100vh;
+    padding: 24px;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.view-customer-header {
+    margin-bottom: 24px;
+}
+
+.customer-back-btn {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    padding: 0;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.customer-back-btn:hover {
+    color: #1d4ed8;
+}
+
+.view-customer-title {
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.view-customer-subtitle {
+    color: #6b7280;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   Main Card
+========================= */
+
+.view-customer-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   Profile Section
+========================= */
+
+.customer-profile-section {
+    min-height: 100%;
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #f8fafc;
+    border-right: 1px solid #e5e7eb;
+}
+
+.large-customer-avatar {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.customer-profile-name {
+    color: #111827;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.customer-profile-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #16a34a;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.customer-inActiveProfile-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.Inactivestatus-dot {
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #16a34a;
+    border-radius: 50%;
+}
+
+.customer-profile-since {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   Information Section
+========================= */
+
+.customer-information-section {
+    padding: 36px;
+}
+
+.customer-section-title {
+    color: #111827;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   Information Grid
+========================= */
+
+.customer-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.customer-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.customer-info-label {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+.customer-info-item strong {
+    color: #111827;
+    font-size: 0.95rem;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.customer-active-text {
+    color: #16a34a !important;
+}
+.customer-inactive-text {
+    color: red !important;
+}
+
+
+/* =========================
+   Actions
+========================= */
+
+.customer-details-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.customer-edit-btn {
+    border-radius: 8px;
+    padding: 9px 18px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991.98px) {
+
+    .customer-profile-section {
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+        min-height: auto;
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+    .view-customer-page {
+        padding: 16px;
+    }
+
+    .customer-profile-section {
+        padding: 30px 20px;
+    }
+
+    .customer-information-section {
+        padding: 24px 20px;
+    }
+
+    .customer-info-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .customer-details-actions {
+        justify-content: stretch;
+    }
+
+    .customer-edit-btn {
+        width: 100%;
+    }
+
+}
+

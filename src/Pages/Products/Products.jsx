@@ -19,15 +19,19 @@ const Products = () => {
     async function fetchProducts() {
       try {
         let getProducts = localStorage.getItem("Products")
-        let ParseProducts = JSON.parse(getProducts)
-        if (ParseProducts) {
-          setProducts(ParseProducts)
+        let parseProducts = JSON.parse(getProducts)
+
+        if (Array.isArray(parseProducts)) {
+
+          setProducts(parseProducts)
+
         } else {
-          let response = await axios.get("./src/data/Products.json")
+
+          let response = await axios.get("/data/Products.json")
           let data = response.data
+
           localStorage.setItem("Products", JSON.stringify(data))
           setProducts(data)
-          console.log(Products)
         }
       } catch (error) {
         console.log(error)
@@ -140,7 +144,7 @@ const Products = () => {
           <option value="Furniture">Furniture</option>
           <option value="Stationery">Stationery</option>
           Stationery
-          
+
         </select>
 
 

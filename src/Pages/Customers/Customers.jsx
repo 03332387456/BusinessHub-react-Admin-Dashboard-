@@ -18,13 +18,26 @@ const Customers = () => {
     async function fetchcustomers() {
       try {
         let getCustomers = localStorage.getItem("Customers")
+
         if (getCustomers) {
+
           let parseCustomers = JSON.parse(getCustomers)
-          setCustomer(parseCustomers)
+
+          if (Array.isArray(parseCustomers)) {
+            setCustomer(parseCustomers)
+          } else {
+            let fetchData = await axios.get("/data/customers.json")
+            let data = fetchData.data
+
+            localStorage.setItem("Customers", JSON.stringify(data))
+            setCustomer(data)
+          }
+
         } else {
-          let fetchData = await axios.get("./src/data/customers.json")
-          console.log(fetchData.data)
+
+          let fetchData = await axios.get("/data/customers.json")
           let data = fetchData.data
+
           localStorage.setItem("Customers", JSON.stringify(data))
           setCustomer(data)
         }

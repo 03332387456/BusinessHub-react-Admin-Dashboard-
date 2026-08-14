@@ -20,10 +20,14 @@ const Orders = () => {
       try {
         let getOrders = localStorage.getItem("Orders")
         let parseOrders = JSON.parse(getOrders)
-        if (getOrders) {
+
+        if (Array.isArray(parseOrders)) {
+
           setOrder(parseOrders)
+
         } else {
-          let api = await axios.get("./src/data/orders.json")
+
+          let api = await axios.get("/data/orders.json")
           let data = api.data
 
           localStorage.setItem("Orders", JSON.stringify(data))
@@ -104,7 +108,7 @@ const Orders = () => {
             <option value="Paid">
               Paid
             </option>
-             <option value="Pending">
+            <option value="Pending">
               Pending
             </option>
 
@@ -112,7 +116,7 @@ const Orders = () => {
               Processing
             </option>
 
-            
+
           </select>
 
         </div>
